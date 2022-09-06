@@ -1,0 +1,175 @@
+-> Python :- It is a high-level , general-purpose, interpreted programming language.
+   -> High-Level :- It makes it easy to learn.Python doesn't require us to understand the details of the computer in order to develop programs. 
+   -> General-purpose :- We can use python in many domains 
+     -> Web applications , Big data applications , testing , automations , DS | Ml | Al , Mobile Apps , Desktop softwares etc.
+  -> Interpriting :- scripting langauge execute line by line.
+
+  -> Why Python 
+     -> Open sourse 
+     -> Cross Platform 
+     -> It increases our productivity.It allows us to solve complex problems in less time and fewer lines of code.
+     -> Heavy computating work 
+     -> Large ecosystem 
+  -> Python Version 
+  https://www.python.org/downloads/
+    -> Environmental Setup 
+      https://www.python.org/downloads/ (download and install)
+        -> open cmd 
+          python --version 
+    -> Setup Visual Studio Code for python 
+    https://code.visualstudio.com/download 
+      -> install python extension 
+    --> extension is .py 
+
+    --> IDE :- Jupitor notebook 
+    https://jupyter.org/try-jupyter/retro/notebooks/?path=notebooks/Intro.ipynb
+      --> Python Syntax 
+         Whitespace and indentation 
+          def main():
+            i=1 
+            max=10;
+            while (i<max):
+              print(i)
+              i=i+1 
+          main()
+    -> comments 
+     # is used for comments 
+
+     -> Python Variables 
+        -> Variables are the temporary memory location which hold input data.
+        It is a label that we can assign a value to it.
+          syntex:
+          variable_name=value 
+          -> Naming Convension 
+            -> It contain only letters , numbers and underscores(_). Start with a letter or in underscore(_), not with a number 
+            -> Variable names cannot the same as keywords, reserver-keywords and some predefined methods.
+            eg: 
+            empName="anuj";
+            emp_salary=12345;
+          -> String :- It is a series of character. Anything inside a quote is a string 
+           ' ' 
+           " "
+           '''  '''
+           -> 
+greeting='Good'
+time='Afternoon'
+completeString=greeting + time + '!'
+print(completeString)
+print(completeString[0])#G 
+print(completeString[1])#o
+print(len(completeString))#14
+print(completeString[0:4])#Good
+
+--> Python strings are immutable 
+    completeString[0]="S" # not possible 
+--> Numbers (Integers and Floats)
+    age=23
+    percentage=89.45
+--> Boolean (true | false)
+  is_active=True 
+  is_admin=False 
+--> Constants :- readonly value 
+   No build-in features to define 
+
+   --> Python Datatypes 
+     In python the datatypes are allocate at runtime 
+       -> Build in Datatype 
+          -> Numeric (Interger , Float, complex number)
+          -> Sequence Type (Strings , List , Tuple )
+          -> Boolean 
+          -> Set 
+          -> Dictionary 
+        --> Numeric :- numeric value (interger , float , even complex number)
+             -> Integers :- positive or negative whole number.(no limit to define a integer value)
+             -> Float :- decimal value 
+             -> Complex Number :- (real part)+(imaginary part) 2+3j
+            ** to check the datatype at runtime we have type()
+        -> Sequence Type (is the ordered collection of similar or different data types)
+            -> String : collection of 1 or more characters 
+               str="Hello John!";
+               print(type(str))
+            -> List :- are just liek the arrays.
+              myList=[];
+              myList=["sumit"]
+              myList=["sumit","amit","anil"]
+              myList[0]
+              myList[2]
+            -> Tuple :- Just like list. Difference is that tuples are immutable.It cant be modified after it is created.
+           myTuple=('Amit','ANil')
+           print(myTuple)
+           print(myTuple[0])
+           myTuple[0]="Sunil"//not possible 
+           print(myTuple)
+           -> Dictionary :- are kind of hash table type.It consists of key-value pairs .The key can be almost any type , but are usaually numbers or strings . 
+             They are enclosed by curly braces {} and values can be assigned and accessed using square braces[]
+               eg:
+                 dict={}
+                 dict['one']="first data"
+                 dict[2]="second data";
+                 mydict={'name':'anuj','age':23,'dept':'it'}
+          -> In Dictionary we can add , modifiy the values as per the requirement
+          mydict['city']="noida"
+         -> for delete 
+           del dicy[key]
+          -> Type conversion :- 
+            int() 
+            long() 
+            float()
+            complex() 
+            str()
+            eval()
+            tuple()
+            list()
+            set()
+            dict()
+            chr()
+          -> To input a data we have :- input() :- It accept values in the form of string
+          -> \n is used for new line 
+
+        -> Operators :- to perform operations 
+            -> Arthematic :- + , - , / ,* ,% ,++ , --
+            -> Assignment :- = , += , -= , /= 
+            -> Relational :- > , < , >= , <= 
+            -> Comparison :- == , != 
+            -> Logical :- and , or , not 
+            -> Bitwise 
+            -> Membership Operators 
+              in 
+              not in 
+            -> Identity Operators 
+              is 
+              is not 
+            -> Selection | Control Flow (return boolean )
+             if else :- 
+                -> if statement 
+                   if condition:
+                     if-block 
+            -> if else 
+              if condition:
+                  if-block 
+              else :
+                  else-block
+            -> if else if else 
+              if conditon :
+                 ---
+              elif conditon
+                  ---
+              elif condition
+                  ---
+              else :
+                  ---
+          -> Assignments 
+          1. Wap to input 2 values in 2 variables and swap them.
+             -> with the help of 3rd variable 
+             -> without help of 3rd variable 
+             -> in one line or expression 
+          2. Wap to input 3 digit number , reverse it and also find the sum of a digit of a number ?
+            Hint :-
+              num=123
+              rev=321
+              sum=6
+          3. Wap to input 5 subject marks and find there total,percentage and grade ?
+            per>=80 A 
+            per>=60 B 
+            per>=45 C 
+            Fail 
