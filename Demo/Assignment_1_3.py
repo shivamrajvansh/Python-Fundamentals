@@ -20,7 +20,7 @@ if percent >= 80:
     grade = "A"
 elif percent >= 60:    
     grade = "B"
-elif percent >= 45:    
+elif percent >= 45:
     grade = "C"
 else:
     grade = "Fail"
